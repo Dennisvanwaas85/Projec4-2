@@ -16,34 +16,54 @@
     </tr>
   </thead>
   <tbody>
+    <table id="myTable">
     <tr>
       <td>Intel Core i7 8086K</td>
+      <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
     </tr>
     <tr>
       <td>Asrock Fatal1ty Z370</td>
+      <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+
     </tr>
     <tr>
       <td>Corsair Crystal 570X RGB</td>
+      <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+
     </tr>
     <tr>
       <td>Ballistix Elite 8GB DDR4 3466</td>
+    <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
     </tr>
     <tr>
       <td>Noctua NH-D9L</td>
+        <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
     </tr>
     <tr>
       <td>Gigabyte GeForce GTX 1080</td>
+       <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
     </tr>
     <tr>
       <td>Samsung 960 PRO 2TB</td>
+      <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+
     </tr>
     <tr>
       <td>Corsair RM750x</td>
-    </tr>
+      <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
 
+    </tr>
+          
+     <script>
+    function deleteRow(r) {
+      var i = r.parentNode.parentNode.rowIndex;
+      document.getElementById("myTable").deleteRow(i);
+    }
+
+</script>
   </tbody>
 </table>
-  <a class="config" href="https://pcpartpicker.com"><button type="button" class="btn btn-primary btn-lg btn-block confirm">Ga naar webshop</button></a>
+  <a class="config" href="https://pcpartpicker.com"><button type="button" class="btn btn-primary btn-lg btn-block confirm">Koop hier je producten!</button></a>
   <a class="config" href="hardwarepage.html"><button type="button" class="btn btn-primary btn-lg btn-block confirm">terug naar hardware pagina</button></a>
 </body>
 </html>

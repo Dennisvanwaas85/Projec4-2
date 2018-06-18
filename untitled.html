@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+	<table class="table table-sm">
+  <thead>
+    <tr>
+      <th scope="col">Configuratielijst</th>
+    </tr>
+  </thead>
+  <tbody>
+    <table id="myTable">
+    <tr>
+      <td>Intel Core i7 8086K</td>
+      <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+    </tr>
+   
+          
+     <script>
+    function deleteRow(r) {
+      var i = r.parentNode.parentNode.rowIndex;
+      document.getElementById("myTable").deleteRow(i);
+    }
+
+</script>
+  </tbody>
+</table>
+  <br>
+  <br>
+  <br>
+  <br>
+  <a class="config" href="hardwarepage.html"><button type="button" class="btn btn-primary btn-lg btn-block confirm">terug naar hardware pagina</button></a>
+<br>
+
+
+    <a class="config" href="https://pcpartpicker.com"><button type="button" class="btn btn-primary btn-lg btn-block confirm">Koop hier je producten!</button></a>
+</body>
+</html>
